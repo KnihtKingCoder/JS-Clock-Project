@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+
+
+.clock{
+    width: 30rem;
+    height: 30rem;
+    background-color: aliceblue;
+    border: 2rem solid blue;
+    border-radius: 50%;
+    position: relative;
+    left: 550px;
+    top: 100px;
+  
+}
+
+.clock-face{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    border-radius: 50%;
+    transform: translateY(-3px); 
+}
+
+.hand{
+    width: 50%;
+    height: 6px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.time-show{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left: 120px;
+    top: 460px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    color: #000;
+}
+
+.time-show span{
+    padding: 10px;
+    background-color: #fff;
+}
+
